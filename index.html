@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+
+    <style>
+        body, h1 {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #000;
+
+        }
+        .text-container h1{
+            font-size: 130px;
+            color: rgba(225, 225, 225, .1);
+            background-image: url(img/colors.jpg);
+            background-repeat: repeat-x;
+            -webkit-background-clip: text;
+            animation: animate 40s linear infinite;
+        }
+        @keyframes animate {
+            0% {
+                background-position: left 0px top 10px;
+            }
+            45% {
+                background-position: left 1000px top 10px;
+            }
+        }
+        .text-container{
+            margin-top: 15%;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .text-container h1 {
+                font-size: 4rem;
+                margin-top: 3em;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="text-container">
+        <h1> FXPipsers </h1>
+    </div>
+
+</body>
+</html>
